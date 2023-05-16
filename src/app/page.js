@@ -1,11 +1,7 @@
 'use client'
 
-import { useEffect, useState } from "react"
-
-import Cards from "../components/Cards"
-
-export default function Home() {
+export default function Home({children}) {
   return (
-    <></>
+    <div></div>
   )
 }
