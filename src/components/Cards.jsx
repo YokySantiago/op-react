@@ -1,6 +1,6 @@
 'use client';
 
-import Card from '../components/Card.js'
+import Card from './Card.jsx'
 
 export default function Cards({ cards = []}) {
   const renderCard = (card, index) => {
