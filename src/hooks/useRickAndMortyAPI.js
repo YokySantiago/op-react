@@ -7,7 +7,7 @@ export default function useRickAndMortyAPI(entity = 'character') {
   const [page, setPage] = useState(1)
 
   const getRecords = async () => {
-    const ENDPOINT_URL = `https://rickandmortyapi.com/api/${entity}`
+    const ENDPOINT_URL = `https://rickandmortyapi.com/api/${entity}?page=${page}`
     const response = await fetch(ENDPOINT_URL)
     return await response.json() // Promise
   }
